@@ -24,6 +24,104 @@
     />
     <link rel="icon" href="./favicon.png" />
     <title>Single Page CV</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        padding: 20px;
+        margin: 0;
+        line-height: 1.6;
+        background-color: #f4f4f9;
+        color: #333;
+        max-width: 900px;
+        margin: auto;
+        border: 3px solid black;
+      }
+
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Lato", sans-serif;
+      }
+
+      h1 {
+        font-size: 28px;
+        font-weight: 700;
+        color: #3cb371;
+      }
+
+      h2 {
+        font-size: 18px;
+        color: #3cb371;
+        margin-bottom: 8px;
+      }
+
+      h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+
+      .header {
+        padding: 20px 0;
+      }
+
+      .header h1 {
+        margin-bottom: 5px;
+      }
+
+      .header h3 {
+        font-weight: 400;
+        color: #555;
+      }
+
+      .info {
+        margin-bottom: 10px;
+      }
+
+      .info address {
+        font-style: normal;
+        line-height: 1.5;
+      }
+
+      .objective p {
+        margin-bottom: 10px;
+      }
+
+      .skills .skill-item,
+      .experience .experience-item,
+      .projects .project-item,
+      .certifications .certification-item,
+      .soft-skills .soft-skills-item,
+      .languages .language-item {
+        margin-bottom: 10px;
+      }
+
+      ul.list {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+
+      .list li {
+        margin-bottom: 5px;
+      }
+
+      .project-item a,
+      .experience-item a {
+        font-weight: 700;
+      }
+    </style>
   </head>
   <body>
     <header class="header">
@@ -59,27 +157,27 @@
         <div class="skill-list">
           <div class="skill-item">
             <h3>Languages/Technologies:</h3>
-            <ul class="list-skill-item">
+            <ul class="list">
               <li>HTML, CSS3, JavaScript (ES6+)</li>
               <li>Responsive Web Design (RWD)</li>
               <li>SASS, Bootstrap, TailwindCSSt</li>
             </ul>
           </div>
           <div class="skill-item">
-            <h3 class="subtitle">Frontend Frameworks & Libraries:</h3>
+            <h3>Frontend Frameworks & Libraries:</h3>
             <ul class="list">
               <li>React.js, Next.js</li>
               <li>Redux, Context API</li>
             </ul>
           </div>
           <div class="skill-item">
-            <h3 class="subtitle">Version Control:</h3>
+            <h3>Version Control:</h3>
             <ul class="list">
               <li>Git, GitHub</li>
             </ul>
           </div>
           <div class="skill-item">
-            <h3 class="subtitle">Other:</h3>
+            <h3>Other:</h3>
             <ul class="list">
               <li>RESTful APIs, JSON, AJAX</li>
               <li>Browser Developer Tools (Chrome, Firefox)</li>
