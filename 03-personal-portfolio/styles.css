@@ -2,25 +2,10 @@
 :root {
   --bg-color: #f4f4f9;
   --text-color: #2b2d42;
-  --main-heading-color: #ef233c;
-  --subheading-color: #8d99ae;
-  --cta-btn-color: #3d5a80;
-  --cta-btn-hover-color: #98c1d9;
-  --project-btn-color: #ee6c4d;
-  --project-btn-hover-color: #fa9e77;
-  --navbar-hover-color: #2b2d42;
-  --main-heading-font: "Poppins", sans-serif;
-  --main-heading-font-weight: 700;
-  --main-heading-font-size: 48px;
-  --subheading-font: "Lora", serif;
-  --subheading-font-weight: 500;
-  --subheading-font-size: 24px;
-  --paragraph-text-font: "Inter", sans-serif;
-  --paragraph-text-font-weight: 400;
-  --paragraph-text-font-size: 16px;
-  --btn-font: "Roboto", sans-serif;
-  --btn-font-weight: 500;
-  --btn-font-size: 14px;
+  --primary-color: #ef233c;
+  --secondary-color: #8d99ae;
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Inter", sans-serif;
 }
 
 /* Reset Styles */
@@ -32,4 +17,133 @@
 
 body {
   background-color: var(--bg-color);
+  font-family: var(--font-secondary);
+  color: var(--text-color);
+}
+
+/* Hero Section */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  height: 100vh;
+}
+
+/* Header Top */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Logo */
+.logo {
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+/* Navigation Bar */
+.navbar {
+  margin-bottom: 0.875rem;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* CTA Section */
+.cta-section {
+  margin-top: 5rem;
+}
+
+.hero-title {
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  color: var(--primary-color);
+}
+
+.hero-subtitle {
+  font-family: var(--font-secondary);
+  font-size: 1.25rem;
+  margin: 1rem 0 2rem 0;
+  color: var(--secondary-color);
+}
+
+.cta-btn {
+  display: inline-block;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: var(--text-color);
+}
+
+/* Responsive Styling */
+
+/* Hero Section */
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .cta-btn {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-menu {
+    gap: 1rem;
+  }
 }
