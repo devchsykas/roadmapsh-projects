@@ -4,6 +4,7 @@
   --text-color: #2b2d42;
   --primary-color: #ef233c;
   --secondary-color: #8d99ae;
+  --cta-hover-color: #98c1d9;
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Inter", sans-serif;
 }
@@ -19,6 +20,7 @@ body {
   background-color: var(--bg-color);
   font-family: var(--font-secondary);
   color: var(--text-color);
+  height: 100vh;
 }
 
 /* Hero Section */
@@ -29,7 +31,7 @@ body {
   justify-content: center;
   text-align: center;
   padding: 2rem;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 /* Header Top */
@@ -115,13 +117,93 @@ body {
 }
 
 .cta-btn:hover {
-  background-color: var(--text-color);
+  background-color: var(--cta-hover-color);
+}
+
+/* Main Section */
+.main {
+  margin-top: 5rem;
+}
+
+/* Project Section */
+.project-section {
+  padding: 4rem 2rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.project-section-heading {
+  font-family: var(--font-primary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+/* Project Cards */
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Project Info */
+.project-info {
+  padding: 1.5rem;
+  text-align: left;
+  flex: 1;
+}
+
+.project-title {
+  font-family: var(--font-primary);
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.project-text {
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.project-link {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 0, 5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: var(--cta-hover-color);
 }
 
 /* Responsive Styling */
 
-/* Hero Section */
 @media (max-width: 768px) {
+  /* Hero Section */
+
   .header-top {
     flex-direction: column;
     align-items: center;
@@ -145,5 +227,15 @@ body {
 
   .nav-menu {
     gap: 1rem;
+  }
+
+  /* Project Section */
+  .project {
+    flex-direction: column;
+  }
+
+  .project-image,
+  .project-info {
+    width: 100%;
   }
 }
