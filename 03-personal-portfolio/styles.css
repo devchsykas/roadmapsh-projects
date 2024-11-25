@@ -199,6 +199,22 @@ body {
   background-color: var(--cta-hover-color);
 }
 
+/* Experience Section */
+.experience-section {
+  padding: 4rem 2rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.experience-section-heading {
+  font-family: var(--font-primary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
 /* Responsive Styling */
 
 @media (max-width: 768px) {
