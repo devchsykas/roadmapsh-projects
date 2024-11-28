@@ -362,8 +362,10 @@ body {
 /* Single Review Card */
 .review-card {
   background-color: white;
+  border: 1px solid var(--primary-color);
   border-radius: 8px;
-  padding: 2rem;
+  padding: 1.5rem;
+  margin: 1rem 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -372,7 +374,7 @@ body {
 
 .review-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Review Text */
@@ -386,6 +388,28 @@ body {
 
 /* Author Details */
 .review-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.author-image-container {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.author-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.author-details {
   text-align: left;
 }
 
