@@ -275,6 +275,64 @@ body {
   transform: scale(1.05);
 }
 
+/* Education Section */
+.education-section {
+  padding: 4rem 2rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.education-section-heading {
+  font-family: var(--font-primary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+}
+
+/* Education Grid Container */
+.education-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Education Cards */
+.education-item {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Education Title */
+.education-title {
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+/* Education Text */
+.education-text {
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
 /* Responsive Styling */
 
 @media (max-width: 768px) {
@@ -336,6 +394,28 @@ body {
   }
 
   .experience-text {
+    font-size: 0.9rem;
+  }
+
+  /* Education Section */
+  .education-section-heading {
+    font-size: 2rem;
+  }
+
+  .education-grid-container {
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+  }
+
+  .education-item {
+    padding: 1.5rem;
+  }
+
+  .education-title {
+    font-size: 1.25rem;
+  }
+
+  .education-text {
     font-size: 0.9rem;
   }
 }
