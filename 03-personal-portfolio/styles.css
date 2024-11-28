@@ -333,6 +333,76 @@ body {
   line-height: 1.6;
 }
 
+/* Reviews Section */
+
+.reviews-section {
+  padding: 4rem 2rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.reviews-section-heading {
+  font-family: var(--font-primary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+}
+
+/* Reviews Grid */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  padding: 0 1rem;
+}
+
+/* Single Review Card */
+.review-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 400px;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Review Text */
+.review-text {
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Author Details */
+.review-author {
+  text-align: left;
+}
+
+.author-name {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.2rem;
+}
+
+.author-role {
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  color: var(--text-secondary-color);
+}
+
 /* Responsive Styling */
 
 @media (max-width: 768px) {
@@ -417,5 +487,30 @@ body {
 
   .education-text {
     font-size: 0.9rem;
+  }
+
+  /* Reviews Section */
+  .reviews-section-heading {
+    font-size: 2rem;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-card {
+    padding: 1.5rem;
+  }
+
+  .review-text {
+    font-size: 0.9rem;
+  }
+
+  .author-name {
+    font-size: 1.25rem;
+  }
+
+  .author-role {
+    font-size: 0.875rem;
   }
 }
