@@ -1,5 +1,43 @@
+/* Reset Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #333;
+  background-color: linear-gradient(to bottom right, #c6e6fc, #fdf6e3);
+}
 
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
+/* Header Section */
 
+.header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
 
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
