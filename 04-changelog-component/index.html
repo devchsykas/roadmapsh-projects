@@ -20,94 +20,81 @@
     <title>Changelog Component</title>
   </head>
   <body>
-    <!-- Header Section -->
-    <header class="header">
-      <h1 class="title">Changelog</h1>
-      <p class="subtitle">
-        Find all the new features, improvemements and bugfixes here.
-      </p>
-      <!-- <p class="subtitle">
-        Here's everything we have shipped in the past few days
-      </p> -->
-    </header>
-    <!-- Main Section -->
-    <main id="main">
-      <section class="changelog">
-        <div class="log">
-          <time datetime="2024-09-03">3 September 2024</time>
-          <!-- <p class="date">September 3, 2024</p> -->
-          <span class="new">New</span>
-          <p class="description">Added support for multiple languages</p>
-          <!-- <p class="description">Announcing Projects on Frontend Roadmap</p> -->
-          <span class="bugfix">Bugfix</span>
-          <p class="description">
-            Fixed a bug where the app would crash when opening certain files
-          </p>
-          <span class="improvement">Improvement</span>
-          <p class="description">
-            Improved the app's performance for faster load times and smoother
-            user experience
-          </p>
-        </div>
-        <div class="log">
-          <time datetime="2024-08-28">28 August 2024</time>
-          <!-- <p class="date">August 28, 2024</p> -->
-          <span class="new">New</span>
-          <p class="description">
-            Introduced a new onboarding flow for first-time users
-          </p>
-          <!-- <p class="description">
-            Build your learning habits with learning streaks
-          </p> -->
-          <span class="bugfix">Bugfix</span>
-          <p class="description">
-            Addressed an issue where user preferences were not being saved
-            properly
-          </p>
-          <span class="improvement">Improvement</span>
-          <p class="description">
-            Streamlined the checkout process to reduce the number of steps
-            required
-          </p>
-        </div>
-        <div class="log">
-          <time datetime="2024-08-25">25 August 2024</time>
-          <!-- <p class="date">August 25, 2024</p> -->
-          <span class="new">New</span>
-          <p class="description">
-            Implemented a new dashboard design for better data visualization
-          </p>
-          <!-- <p class="description">Git and GitHub Roadmap</p> -->
-          <span class="bugfix">Bugfix</span>
-          <p class="description">
-            Addressed an issue where user preferences were not being saved
-            properly
-          </p>
-          <span class="improvement">Improvement</span>
-          <p class="description">
-            Increased the amount of available storage space for user files
-          </p>
-        </div>
-        <!-- <div class="log">
-          <p class="date">August 22, 2024</p>
-          <p class="description">
-            Submit your project solution and get feedback
-          </p>
-        </div> -->
-        <!-- <div class="log">
-          <p class="date">August 15, 2024</p>
-          <p class="description">Backend Project Ideas</p>
-        </div> -->
-        <!-- <div class="log">
-          <p class="date">August 10, 2024</p>
-          <p class="description">Redis roadmap</p>
-        </div> -->
-        <!-- <div class="log">
-          <p class="date">August 1, 2024</p>
-          <p class="description">Changelog page to help you stay in the loop</p>
-        </div> -->
-        <button class="changelog-btn">Visit Complete Changelog</button>
-      </section>
-    </main>
+    <div class="container">
+      <!-- Header Section -->
+      <header class="header">
+        <h1 class="title">Changelog</h1>
+        <p class="subtitle">
+          Find all the new features, improvements, and bug fixes here.
+        </p>
+      </header>
+      <main class="timeline">
+        <!-- Changelog Entry 1 -->
+        <section class="entry">
+          <div class="date">7 March 2023</div>
+          <div class="details">
+            <div class="tag new">New</div>
+            <p>Added support for multiple languages.</p>
+          </div>
+          <div class="details">
+            <div class="tag bugfix">Bugfix</div>
+            <p>
+              Fixed a bug where the app would crash when opening certain files.
+            </p>
+          </div>
+          <div class="details">
+            <div class="tag improvement">Improvement</div>
+            <p>
+              Improved the app's performance for faster load times and smoother
+              user experience.
+            </p>
+          </div>
+        </section>
+        <!-- Changelog Entry 2 -->
+        <section class="entry">
+          <div class="date">28 February 2023</div>
+          <div class="details">
+            <div class="tag new">New</div>
+            <p>Introduced a new onboarding flow for first-time users.</p>
+          </div>
+          <div class="details">
+            <div class="tag bugfix">Bugfix</div>
+            <p>
+              Addressed an issue where user preferences were not being saved
+              properly.
+            </p>
+          </div>
+          <div class="details">
+            <div class="tag improvement">Improvement</div>
+            <p>
+              Streamlined the checkout process to reduce the number of steps
+              required.
+            </p>
+          </div>
+        </section>
+        <!-- Changelog Entry 3 -->
+        <section class="entry">
+          <div class="date">21 January 2023</div>
+          <div class="details">
+            <div class="tag new">New</div>
+            <p>Added support for dark mode.</p>
+          </div>
+          <div class="details">
+            <div class="tag bugfix">Bugfix</div>
+            <p>
+              Fixed a bug where the app would crash when displaying certain
+              content.
+            </p>
+          </div>
+          <div class="details">
+            <div class="tag improvement">Improvement</div>
+            <p>
+              Improved the app's performance by optimizing the code and reducing
+              unnecessary calculations.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
