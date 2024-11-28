@@ -41,3 +41,103 @@ body {
   margin-bottom: 2rem;
   color: #666;
 }
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 1.25rem;
+  border: 0.125rem solid #e0e0e0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  bottom: 0;
+  width: 0.25rem;
+  background-color: #007acc;
+  border-radius: 0.125rem;
+}
+
+/* Entry Section */
+.entry {
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.entry::before {
+  content: "";
+  position: absolute;
+  left: -0.875rem;
+  top: 0.3rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  background: white;
+  border: 0.125rem solid #007acc;
+  border-radius: 50%;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.details {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.25rem;
+  margin-right: 1rem;
+  color: white;
+}
+
+.tag.new {
+  background-color: #28a745;
+}
+
+.tag.bugfix {
+  background-color: #dc3545;
+}
+
+.tag.improvement {
+  background-color: #007bff;
+}
+
+.description {
+  margin: 0;
+  color: #333;
+}
+
+/* Changelog Link */
+.visit-changelog {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  background-color: #333;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.625rem 1.25rem;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.link:hover {
+  background-color: #212529;
+}
